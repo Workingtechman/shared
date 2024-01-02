@@ -2,22 +2,22 @@ def call(String name) {
 //  stages {
 //    stage('test & scan with sonar') { 
 //      steps {
-        echo "testing ${name}"
+        echo "testing & scan ${name} with sonar"
 //      }
 //    }
 //    stage('Build FP_name for ssv') {
 //      steps {
-        echo "testing ${name}"
+        echo "building ${name}"
 //      }
 //    }
 //    stage('Build FP_name Docker Image for ssv') {
 //      steps {
-        echo "testing ${name}"
+        echo "docker build ${name}"
 //      }
 //    }
 //    stage('Deploy FP_name to SSV openshift') {
 //      steps {
-        echo "testing ${name}"
+        echo "deploy ${name}"
 //      }
 //    }
 //  }
