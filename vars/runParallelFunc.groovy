@@ -4,10 +4,10 @@ def call(String name) {
         node("linux-agent") {
           stage("${name}") {
             stage('test & scan with sonar') { 
-              sh "echo Do testing & scan ${name} with sonar"
+              sh "echo 'Do testing & scan ${name} with sonar'"
             }
             stage("Build ${name} for ssv") {
-              sh "echo building ${name}"
+              sh "echo 'building ${name}'"
             }
           }
 //    stage('Build FP_name Docker Image for ssv') {
